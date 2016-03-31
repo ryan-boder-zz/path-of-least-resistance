@@ -16,16 +16,22 @@ class PathFinderTest: XCTestCase {
         XCTAssertEqual([], path)
     }
     
-    func testWhenSingleRowSingleColumnInputReturnIt() {
+    func testWhenSingleRowSingleColumnInput() {
         let (total, path) = out.find([[4]])
         XCTAssertEqual(4, total)
         XCTAssertEqual([1], path)
     }
     
-    func testWhenSingleRowSingleColumnInputReturnIt2() {
+    func testWhenSingleRowSingleColumnInput2() {
         let (total, path) = out.find([[8]])
         XCTAssertEqual(8, total)
         XCTAssertEqual([1], path)
+    }
+    
+    func testWhenSingleRowMultipleColumnInput() {
+        let (total, path) = out.find([[1,2,3,4]])
+        XCTAssertEqual(10, total)
+        XCTAssertEqual([1,1,1,1], path)
     }
 
 }
