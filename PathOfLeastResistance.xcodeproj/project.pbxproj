@@ -8,7 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C0A990C11CACC64200ACE904 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A990C01CACC64200ACE904 /* main.swift */; };
+		C0A990D71CACC70800ACE904 /* PathFinderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A990D61CACC70800ACE904 /* PathFinderTest.swift */; };
+		C0A990D91CACC74D00ACE904 /* PathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A990D81CACC74D00ACE904 /* PathFinder.swift */; };
+		C0A990DA1CACC76200ACE904 /* PathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A990D81CACC74D00ACE904 /* PathFinder.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0A990D41CACC6C200ACE904 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0A990B51CACC64200ACE904 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0A990BC1CACC64200ACE904;
+			remoteInfo = PathOfLeastResistance;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C0A990BB1CACC64200ACE904 /* CopyFiles */ = {
@@ -25,10 +38,21 @@
 /* Begin PBXFileReference section */
 		C0A990BD1CACC64200ACE904 /* PathOfLeastResistance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PathOfLeastResistance; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A990C01CACC64200ACE904 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C0A990CC1CACC67400ACE904 /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A990D01CACC67400ACE904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A990D61CACC70800ACE904 /* PathFinderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathFinderTest.swift; sourceTree = "<group>"; };
+		C0A990D81CACC74D00ACE904 /* PathFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathFinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C0A990BA1CACC64200ACE904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A990C91CACC67400ACE904 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A990BF1CACC64200ACE904 /* PathOfLeastResistance */,
+				C0A990CD1CACC67400ACE904 /* Test */,
 				C0A990BE1CACC64200ACE904 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A990BD1CACC64200ACE904 /* PathOfLeastResistance */,
+				C0A990CC1CACC67400ACE904 /* Test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +84,18 @@
 			isa = PBXGroup;
 			children = (
 				C0A990C01CACC64200ACE904 /* main.swift */,
+				C0A990D81CACC74D00ACE904 /* PathFinder.swift */,
 			);
 			path = PathOfLeastResistance;
+			sourceTree = "<group>";
+		};
+		C0A990CD1CACC67400ACE904 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				C0A990D01CACC67400ACE904 /* Info.plist */,
+				C0A990D61CACC70800ACE904 /* PathFinderTest.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +118,24 @@
 			productReference = C0A990BD1CACC64200ACE904 /* PathOfLeastResistance */;
 			productType = "com.apple.product-type.tool";
 		};
+		C0A990CB1CACC67400ACE904 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A990D11CACC67400ACE904 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				C0A990C81CACC67400ACE904 /* Sources */,
+				C0A990C91CACC67400ACE904 /* Frameworks */,
+				C0A990CA1CACC67400ACE904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0A990D51CACC6C200ACE904 /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = Test;
+			productReference = C0A990CC1CACC67400ACE904 /* Test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +147,9 @@
 				ORGANIZATIONNAME = "Ryan Boder";
 				TargetAttributes = {
 					C0A990BC1CACC64200ACE904 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C0A990CB1CACC67400ACE904 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -110,20 +167,49 @@
 			projectRoot = "";
 			targets = (
 				C0A990BC1CACC64200ACE904 /* PathOfLeastResistance */,
+				C0A990CB1CACC67400ACE904 /* Test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0A990CA1CACC67400ACE904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0A990B91CACC64200ACE904 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A990D91CACC74D00ACE904 /* PathFinder.swift in Sources */,
 				C0A990C11CACC64200ACE904 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0A990C81CACC67400ACE904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A990DA1CACC76200ACE904 /* PathFinder.swift in Sources */,
+				C0A990D71CACC70800ACE904 /* PathFinderTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0A990D51CACC6C200ACE904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0A990BC1CACC64200ACE904 /* PathOfLeastResistance */;
+			targetProxy = C0A990D41CACC6C200ACE904 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C0A990C21CACC64200ACE904 /* Debug */ = {
@@ -222,6 +308,31 @@
 			};
 			name = Release;
 		};
+		C0A990D21CACC67400ACE904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.boder.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0A990D31CACC67400ACE904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.boder.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -239,6 +350,14 @@
 			buildConfigurations = (
 				C0A990C51CACC64200ACE904 /* Debug */,
 				C0A990C61CACC64200ACE904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0A990D11CACC67400ACE904 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A990D21CACC67400ACE904 /* Debug */,
+				C0A990D31CACC67400ACE904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
