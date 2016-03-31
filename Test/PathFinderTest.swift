@@ -15,5 +15,11 @@ class PathFinderTest: XCTestCase {
         XCTAssertNil(total)
         XCTAssertEqual([], path)
     }
+    
+    func testWhenSingleInputReturnIt() {
+        let (total, path) = out.find([[4]])
+        XCTAssertEqual(4, total)
+        XCTAssertEqual([1], path)
+    }
 
 }
