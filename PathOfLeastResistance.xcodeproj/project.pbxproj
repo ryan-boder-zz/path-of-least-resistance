@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C082A3521CADE6B7005791E4 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082A3511CADE6B7005791E4 /* Grid.swift */; };
+		C082A3531CADE6B7005791E4 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082A3511CADE6B7005791E4 /* Grid.swift */; };
+		C082A3551CADEA62005791E4 /* GridTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082A3541CADEA62005791E4 /* GridTest.swift */; };
 		C0A990C11CACC64200ACE904 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A990C01CACC64200ACE904 /* main.swift */; };
 		C0A990D71CACC70800ACE904 /* PathFinderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A990D61CACC70800ACE904 /* PathFinderTest.swift */; };
 		C0A990D91CACC74D00ACE904 /* PathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A990D81CACC74D00ACE904 /* PathFinder.swift */; };
@@ -36,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C082A3511CADE6B7005791E4 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		C082A3541CADEA62005791E4 /* GridTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTest.swift; sourceTree = "<group>"; };
 		C0A990BD1CACC64200ACE904 /* PathOfLeastResistance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PathOfLeastResistance; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A990C01CACC64200ACE904 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C0A990CC1CACC67400ACE904 /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +90,7 @@
 			children = (
 				C0A990C01CACC64200ACE904 /* main.swift */,
 				C0A990D81CACC74D00ACE904 /* PathFinder.swift */,
+				C082A3511CADE6B7005791E4 /* Grid.swift */,
 			);
 			path = PathOfLeastResistance;
 			sourceTree = "<group>";
@@ -94,6 +100,7 @@
 			children = (
 				C0A990D01CACC67400ACE904 /* Info.plist */,
 				C0A990D61CACC70800ACE904 /* PathFinderTest.swift */,
+				C082A3541CADEA62005791E4 /* GridTest.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -189,6 +196,7 @@
 			files = (
 				C0A990D91CACC74D00ACE904 /* PathFinder.swift in Sources */,
 				C0A990C11CACC64200ACE904 /* main.swift in Sources */,
+				C082A3521CADE6B7005791E4 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +206,8 @@
 			files = (
 				C0A990DA1CACC76200ACE904 /* PathFinder.swift in Sources */,
 				C0A990D71CACC70800ACE904 /* PathFinderTest.swift in Sources */,
+				C082A3531CADE6B7005791E4 /* Grid.swift in Sources */,
+				C082A3551CADEA62005791E4 /* GridTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +362,7 @@
 				C0A990C61CACC64200ACE904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0A990D11CACC67400ACE904 /* Build configuration list for PBXNativeTarget "Test" */ = {
 			isa = XCConfigurationList;
@@ -360,6 +371,7 @@
 				C0A990D31CACC67400ACE904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -2,7 +2,7 @@ import Foundation
 
 class PathFinder {
     
-    init(){
+    init() {
     }
     
     func find(grid: Array<Array<Int>>) -> (Int!, Array<Int>!) {
