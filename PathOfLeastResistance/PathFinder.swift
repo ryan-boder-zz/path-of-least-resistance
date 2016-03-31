@@ -9,7 +9,7 @@ class PathFinder {
         if grid == [] {
             return (nil, [])
         } else {
-            return (4, [1])
+            return (grid[0][0], [1])
         }
     }
     
