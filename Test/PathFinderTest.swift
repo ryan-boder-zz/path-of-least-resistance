@@ -64,4 +64,28 @@ class PathFinderTest: XCTestCase {
         XCTAssertEqual([1,2,3,2,1], path)
     }
     
+    func testGivenExample1() {
+        let (total, path) = out.find([
+            [3,4,1,2,8,6],
+            [6,1,8,2,7,4],
+            [5,9,3,9,9,5],
+            [8,4,1,3,2,6],
+            [3,7,2,8,6,4]
+            ])
+        XCTAssertEqual(16, total)
+        XCTAssertEqual([1,2,3,4,4,5], path)
+    }
+    
+    func testGivenExample2() {
+        let (total, path) = out.find([
+            [3,4,1,2,8,6],
+            [6,1,8,2,7,4],
+            [5,9,3,9,9,5],
+            [8,4,1,3,2,6],
+            [3,7,2,1,2,3]
+            ])
+        XCTAssertEqual(11, total)
+        XCTAssertEqual([1,2,1,5,4,5], path)
+    }
+    
 }
