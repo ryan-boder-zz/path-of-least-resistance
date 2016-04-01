@@ -25,4 +25,19 @@ class GridTest: XCTestCase {
         XCTAssertEqual(nil, g.get((-1,1)))
     }
     
+    func testGetInvalidHighX() {
+        let g = Grid([[1,2,3],[4,5,6],[7,8,9]])
+        XCTAssertEqual(nil, g.get((3,1)))
+    }
+    
+    func testGetInvalidLowY() {
+        let g = Grid([[1,2,3],[4,5,6],[7,8,9]])
+        XCTAssertEqual(nil, g.get((1,-1)))
+    }
+    
+    func testGetInvalidHighY() {
+        let g = Grid([[1,2,3],[4,5,6],[7,8,9]])
+        XCTAssertEqual(nil, g.get((1,3)))
+    }
+    
 }
