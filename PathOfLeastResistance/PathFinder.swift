@@ -37,15 +37,21 @@ class PathFinder {
         let right = findFrom(g, resistance, path, g.right(coords))
         let down = findFrom(g, resistance, path, g.down(coords))
         
-        if up.1 <= right.1 && up.1 <= down.1 {
+        if betterThan(up, right) && betterThan(up, down) {
             return up
-        } else if right.1 <= down.1 {
+        } else if betterThan(right, down) {
             return right
         } else {
             return down
         }
     }
     
-    
+    func betterThan(lhs: (Bool, Int, Array<Int>), _ rhs: (Bool, Int, Array<Int>)) -> Bool {
+        if lhs.2.count != rhs.2.count {
+            return lhs.2.count > rhs.2.count
+        } else {
+            return lhs.1 <= rhs.1
+        }
+    }
     
 }
