@@ -7,7 +7,7 @@ while true {
     if rowString == nil || rowString!.isEmpty {
         break
     }
-    let colStrings = rowString!.componentsSeparatedByString(",")
+    let colStrings = rowString!.componentsSeparatedByString(" ")
     input.append(colStrings.map() { x in Int(x)! })
 }
 
