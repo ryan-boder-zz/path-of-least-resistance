@@ -8,7 +8,7 @@ while true {
         break
     }
     let colStrings = rowString!.componentsSeparatedByString(" ")
-    input.append(colStrings.map() { x in Int(x)! })
+    input.append(colStrings.map() { x in Int(x) ?? 0 })
 }
 
 let finder = PathFinder()
