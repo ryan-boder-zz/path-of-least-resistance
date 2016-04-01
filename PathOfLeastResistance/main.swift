@@ -11,6 +11,14 @@ while true {
     input.append(colStrings.map() { x in Int(x) ?? 0 })
 }
 
+var width: Int!
+for row in input {
+    width = width ?? row.count
+    if row.count != width {
+        fatalError("All rows must have the same length")
+    }
+}
+
 let finder = PathFinder()
 let (success, resistance, path) = finder.find(input)
 
