@@ -24,4 +24,12 @@ class Grid {
         return (r, c + 1)
     }
     
+    func up(coords: (Int, Int)) -> (Int, Int)! {
+        let (r, c) = coords
+        if c == matrix[0].count {
+            return nil
+        }
+        return (r == 1 ? matrix.count : r - 1, c + 1)
+    }
+    
 }
