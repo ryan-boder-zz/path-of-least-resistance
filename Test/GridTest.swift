@@ -33,4 +33,32 @@ class GridTest: XCTestCase {
         XCTAssertEqual(nil, g.get((1,4)))
     }
     
+    func testNavigateR1C1Right() {
+        XCTAssertTrue((1,2) == g.right((1,1)))
+    }
+    
+    func testNavigateR2C1Right() {
+        XCTAssertTrue((2,2) == g.right((2,1)))
+    }
+    
+    func testNavigateR3C1Right() {
+        XCTAssertTrue((3,2) == g.right((3,1)))
+    }
+    
+    func testNavigateR1C2Right() {
+        XCTAssertTrue((1,3) == g.right((1,2)))
+    }
+    
+    func testNavigateR2C2Right() {
+        XCTAssertTrue((2,3) == g.right((2,2)))
+    }
+    
+    func testNavigateR3C2Right() {
+        XCTAssertTrue((3,3) == g.right((3,2)))
+    }
+    
+    func testNavigateR1C3Right() {
+        XCTAssertTrue(nil == g.right((1,3)))
+    }
+    
 }

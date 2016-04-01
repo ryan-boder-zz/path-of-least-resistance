@@ -16,4 +16,12 @@ class Grid {
         return matrix[r - 1][c - 1]
     }
     
+    func right(coords: (Int, Int)) -> (Int, Int)! {
+        let (r, c) = coords
+        if c == matrix[0].count {
+            return nil
+        }
+        return (r, c + 1)
+    }
+    
 }
