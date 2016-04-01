@@ -18,7 +18,7 @@ class Grid {
     
     func right(coords: (Int, Int)) -> (Int, Int)! {
         let (r, c) = coords
-        if c == matrix[0].count {
+        if c >= matrix[0].count {
             return nil
         }
         return (r, c + 1)
@@ -26,10 +26,18 @@ class Grid {
     
     func up(coords: (Int, Int)) -> (Int, Int)! {
         let (r, c) = coords
-        if c == matrix[0].count {
+        if c >= matrix[0].count {
             return nil
         }
         return (r == 1 ? matrix.count : r - 1, c + 1)
+    }
+    
+    func down(coords: (Int, Int)) -> (Int, Int)! {
+        let (r, c) = coords
+        if c >= matrix[0].count {
+            return nil
+        }
+        return (r == matrix.count ? 1 : r + 1, c + 1)
     }
     
 }
