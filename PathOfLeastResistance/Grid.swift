@@ -9,11 +9,11 @@ class Grid {
     }
     
     func get(coords: (Int, Int)) -> Int! {
-        let (x, y) = coords
-        if x < 0 || x >= matrix.count || y < 0 || y >= matrix.count {
+        let (r, c) = coords
+        if r <= 0 || r > matrix.count || c <= 0 || c > matrix[0].count {
             return nil
         }
-        return matrix[x][y]
+        return matrix[r - 1][c - 1]
     }
     
 }
