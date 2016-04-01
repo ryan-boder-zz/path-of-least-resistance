@@ -26,7 +26,10 @@ class PathFinder {
         let resistance = prevResistance + g.get(coords)
         let (r, c) = coords
         let path = prevPath + [r]
-        if c == g.columns {
+        
+        if resistance > 50 {
+            return (false, prevResistance, prevPath)
+        } else if c == g.columns {
             return (true, resistance, path)
         }
         

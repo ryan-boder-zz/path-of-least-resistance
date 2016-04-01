@@ -12,65 +12,72 @@ class PathFinderTest: XCTestCase {
     
     func testWhenEmptyInputReturnNil() {
         let (success, resistance, path) = out.find([])
-        XCTAssertEqual(false, success)
+        XCTAssertFalse(success)
         XCTAssertEqual(0, resistance)
         XCTAssertEqual([], path)
     }
     
     func testWhenSingleRowSingleColumnInput() {
         let (success, resistance, path) = out.find([[4]])
-        XCTAssertEqual(true, success)
+        XCTAssertTrue(success)
         XCTAssertEqual(4, resistance)
         XCTAssertEqual([1], path)
     }
     
     func testWhenSingleRowSingleColumnInput2() {
         let (success, resistance, path) = out.find([[8]])
-        XCTAssertEqual(true, success)
+        XCTAssertTrue(success)
         XCTAssertEqual(8, resistance)
         XCTAssertEqual([1], path)
     }
     
     func testWhenSingleRowMultipleColumnInput() {
         let (success, resistance, path) = out.find([[1,2,3,4]])
-        XCTAssertEqual(true, success)
+        XCTAssertTrue(success)
         XCTAssertEqual(10, resistance)
         XCTAssertEqual([1,1,1,1], path)
     }
     
     func test2RowInput1() {
         let (success, resistance, path) = out.find([[1,2],[3,4]])
-        XCTAssertEqual(true, success)
+        XCTAssertTrue(success)
         XCTAssertEqual(3, resistance)
         XCTAssertEqual([1,1], path)
     }
     
     func test2RowInput2() {
         let (success, resistance, path) = out.find([[3,4],[1,2]])
-        XCTAssertEqual(true, success)
+        XCTAssertTrue(success)
         XCTAssertEqual(3, resistance)
         XCTAssertEqual([2,2], path)
     }
     
     func test2RowInput3() {
         let (success, resistance, path) = out.find([[1,4],[3,2]])
-        XCTAssertEqual(true, success)
+        XCTAssertTrue(success)
         XCTAssertEqual(3, resistance)
         XCTAssertEqual([1,2], path)
     }
     
     func test2RowInput4() {
         let (success, resistance, path) = out.find([[1,2,1,2,1],[2,1,2,1,2]])
-        XCTAssertEqual(true, success)
+        XCTAssertTrue(success)
         XCTAssertEqual(5, resistance)
         XCTAssertEqual([1,2,1,2,1], path)
     }
     
     func test3RowInput1() {
         let (success, resistance, path) = out.find([[1,2,3,2,1],[2,1,2,1,2],[4,4,1,4,4]])
-        XCTAssertEqual(true, success)
+        XCTAssertTrue(success)
         XCTAssertEqual(5, resistance)
         XCTAssertEqual([1,2,3,2,1], path)
+    }
+    
+    func testResistanceTooHigh1() {
+        let (success, resistance, path) = out.find([[10,10,10,10,11]])
+        XCTAssertFalse(success)
+        XCTAssertEqual(40, resistance)
+        XCTAssertEqual([1,1,1,1], path)
     }
     
     func testGivenExample1() {
@@ -81,7 +88,7 @@ class PathFinderTest: XCTestCase {
             [8,4,1,3,2,6],
             [3,7,2,8,6,4]
             ])
-        XCTAssertEqual(true, success)
+        XCTAssertTrue(success)
         XCTAssertEqual(16, resistance)
         XCTAssertEqual([1,2,3,4,4,5], path)
     }
@@ -94,7 +101,7 @@ class PathFinderTest: XCTestCase {
             [8,4,1,3,2,6],
             [3,7,2,1,2,3]
             ])
-        XCTAssertEqual(true, success)
+        XCTAssertTrue(success)
         XCTAssertEqual(11, resistance)
         XCTAssertEqual([1,2,1,5,4,5], path)
     }
