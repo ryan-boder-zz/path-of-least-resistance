@@ -5,6 +5,12 @@ class GridTest: XCTestCase {
     
     let g = Grid([[1,2,3],[4,5,6],[7,8,9]])
 
+    func testRowColumnCount() {
+        let x = Grid([[1,2,3],[4,5,6]])
+        XCTAssertEqual(2, x.rows)
+        XCTAssertEqual(3, x.columns)
+    }
+    
     func testInitAndGetValid() {
         XCTAssertEqual(1, g.get((1,1)))
         XCTAssertEqual(2, g.get((1,2)))

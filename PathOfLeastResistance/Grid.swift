@@ -8,6 +8,14 @@ class Grid {
         self.matrix = matrix
     }
     
+    var rows: Int {
+        return matrix.count
+    }
+    
+    var columns: Int {
+        return matrix[0].count
+    }
+    
     func get(coords: (Int, Int)) -> Int! {
         let (r, c) = coords
         if r <= 0 || r > matrix.count || c <= 0 || c > matrix[0].count {
