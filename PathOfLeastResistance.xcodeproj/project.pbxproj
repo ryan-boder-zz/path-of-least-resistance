@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0347B661CB5DEFD004BC6DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0347B651CB5DEFD004BC6DF /* AppDelegate.swift */; };
+		C0347B681CB5DEFD004BC6DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0347B671CB5DEFD004BC6DF /* ViewController.swift */; };
+		C0347B6B1CB5DEFD004BC6DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0347B691CB5DEFD004BC6DF /* Main.storyboard */; };
+		C0347B6D1CB5DEFD004BC6DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0347B6C1CB5DEFD004BC6DF /* Assets.xcassets */; };
+		C0347B701CB5DEFD004BC6DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0347B6E1CB5DEFD004BC6DF /* LaunchScreen.storyboard */; };
+		C0347B751CB5EC83004BC6DF /* PathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A990D81CACC74D00ACE904 /* PathFinder.swift */; };
+		C0347B761CB5EC8F004BC6DF /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082A3511CADE6B7005791E4 /* Grid.swift */; };
+		C0347B781CB5ED44004BC6DF /* InputParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0347B771CB5ED44004BC6DF /* InputParser.swift */; };
+		C0347B7A1CB5F026004BC6DF /* InputParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0347B791CB5F026004BC6DF /* InputParserTest.swift */; };
+		C0347B7B1CB5F165004BC6DF /* InputParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0347B771CB5ED44004BC6DF /* InputParser.swift */; };
+		C0347B7C1CB5F2E6004BC6DF /* InputParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0347B771CB5ED44004BC6DF /* InputParser.swift */; };
 		C082A3521CADE6B7005791E4 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082A3511CADE6B7005791E4 /* Grid.swift */; };
 		C082A3531CADE6B7005791E4 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082A3511CADE6B7005791E4 /* Grid.swift */; };
 		C082A3551CADEA62005791E4 /* GridTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082A3541CADEA62005791E4 /* GridTest.swift */; };
@@ -17,6 +28,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C0347B451CB5DDEE004BC6DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0A990B51CACC64200ACE904 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0347B301CB5DDEE004BC6DF;
+			remoteInfo = PLRApp;
+		};
+		C0347B501CB5DDEE004BC6DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0A990B51CACC64200ACE904 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0347B301CB5DDEE004BC6DF;
+			remoteInfo = PLRApp;
+		};
 		C0A990D41CACC6C200ACE904 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C0A990B51CACC64200ACE904 /* Project object */;
@@ -39,6 +64,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C0347B311CB5DDEE004BC6DF /* PLRApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLRApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0347B441CB5DDEE004BC6DF /* PLRAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PLRAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0347B4F1CB5DDEE004BC6DF /* PLRAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PLRAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0347B631CB5DEFC004BC6DF /* PLRiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLRiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0347B651CB5DEFD004BC6DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0347B671CB5DEFD004BC6DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0347B6A1CB5DEFD004BC6DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0347B6C1CB5DEFD004BC6DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0347B6F1CB5DEFD004BC6DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0347B711CB5DEFD004BC6DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0347B771CB5ED44004BC6DF /* InputParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputParser.swift; sourceTree = "<group>"; };
+		C0347B791CB5F026004BC6DF /* InputParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputParserTest.swift; sourceTree = "<group>"; };
 		C082A3511CADE6B7005791E4 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		C082A3541CADEA62005791E4 /* GridTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTest.swift; sourceTree = "<group>"; };
 		C0A990BD1CACC64200ACE904 /* PathOfLeastResistance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PathOfLeastResistance; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +87,34 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C0347B2E1CB5DDEE004BC6DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0347B411CB5DDEE004BC6DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0347B4C1CB5DDEE004BC6DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0347B601CB5DEFC004BC6DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0A990BA1CACC64200ACE904 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,11 +132,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0347B641CB5DEFD004BC6DF /* PLRiOS */ = {
+			isa = PBXGroup;
+			children = (
+				C0347B651CB5DEFD004BC6DF /* AppDelegate.swift */,
+				C0347B671CB5DEFD004BC6DF /* ViewController.swift */,
+				C0347B691CB5DEFD004BC6DF /* Main.storyboard */,
+				C0347B6C1CB5DEFD004BC6DF /* Assets.xcassets */,
+				C0347B6E1CB5DEFD004BC6DF /* LaunchScreen.storyboard */,
+				C0347B711CB5DEFD004BC6DF /* Info.plist */,
+			);
+			path = PLRiOS;
+			sourceTree = "<group>";
+		};
 		C0A990B41CACC64200ACE904 = {
 			isa = PBXGroup;
 			children = (
 				C0A990BF1CACC64200ACE904 /* PathOfLeastResistance */,
 				C0A990CD1CACC67400ACE904 /* Test */,
+				C0347B641CB5DEFD004BC6DF /* PLRiOS */,
 				C0A990BE1CACC64200ACE904 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +160,10 @@
 			children = (
 				C0A990BD1CACC64200ACE904 /* PathOfLeastResistance */,
 				C0A990CC1CACC67400ACE904 /* Test.xctest */,
+				C0347B311CB5DDEE004BC6DF /* PLRApp.app */,
+				C0347B441CB5DDEE004BC6DF /* PLRAppTests.xctest */,
+				C0347B4F1CB5DDEE004BC6DF /* PLRAppUITests.xctest */,
+				C0347B631CB5DEFC004BC6DF /* PLRiOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +174,7 @@
 				C0A990C01CACC64200ACE904 /* main.swift */,
 				C0A990D81CACC74D00ACE904 /* PathFinder.swift */,
 				C082A3511CADE6B7005791E4 /* Grid.swift */,
+				C0347B771CB5ED44004BC6DF /* InputParser.swift */,
 			);
 			path = PathOfLeastResistance;
 			sourceTree = "<group>";
@@ -101,6 +185,7 @@
 				C0A990D01CACC67400ACE904 /* Info.plist */,
 				C0A990D61CACC70800ACE904 /* PathFinderTest.swift */,
 				C082A3541CADEA62005791E4 /* GridTest.swift */,
+				C0347B791CB5F026004BC6DF /* InputParserTest.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -108,6 +193,76 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C0347B301CB5DDEE004BC6DF /* PLRApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0347B5C1CB5DDEE004BC6DF /* Build configuration list for PBXNativeTarget "PLRApp" */;
+			buildPhases = (
+				C0347B2D1CB5DDEE004BC6DF /* Sources */,
+				C0347B2E1CB5DDEE004BC6DF /* Frameworks */,
+				C0347B2F1CB5DDEE004BC6DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PLRApp;
+			productName = PLRApp;
+			productReference = C0347B311CB5DDEE004BC6DF /* PLRApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0347B431CB5DDEE004BC6DF /* PLRAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0347B5D1CB5DDEE004BC6DF /* Build configuration list for PBXNativeTarget "PLRAppTests" */;
+			buildPhases = (
+				C0347B401CB5DDEE004BC6DF /* Sources */,
+				C0347B411CB5DDEE004BC6DF /* Frameworks */,
+				C0347B421CB5DDEE004BC6DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0347B461CB5DDEE004BC6DF /* PBXTargetDependency */,
+			);
+			name = PLRAppTests;
+			productName = PLRAppTests;
+			productReference = C0347B441CB5DDEE004BC6DF /* PLRAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0347B4E1CB5DDEE004BC6DF /* PLRAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0347B5E1CB5DDEE004BC6DF /* Build configuration list for PBXNativeTarget "PLRAppUITests" */;
+			buildPhases = (
+				C0347B4B1CB5DDEE004BC6DF /* Sources */,
+				C0347B4C1CB5DDEE004BC6DF /* Frameworks */,
+				C0347B4D1CB5DDEE004BC6DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0347B511CB5DDEE004BC6DF /* PBXTargetDependency */,
+			);
+			name = PLRAppUITests;
+			productName = PLRAppUITests;
+			productReference = C0347B4F1CB5DDEE004BC6DF /* PLRAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C0347B621CB5DEFC004BC6DF /* PLRiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0347B741CB5DEFD004BC6DF /* Build configuration list for PBXNativeTarget "PLRiOS" */;
+			buildPhases = (
+				C0347B5F1CB5DEFC004BC6DF /* Sources */,
+				C0347B601CB5DEFC004BC6DF /* Frameworks */,
+				C0347B611CB5DEFC004BC6DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PLRiOS;
+			productName = PLRiOS;
+			productReference = C0347B631CB5DEFC004BC6DF /* PLRiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C0A990BC1CACC64200ACE904 /* PathOfLeastResistance */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0A990C41CACC64200ACE904 /* Build configuration list for PBXNativeTarget "PathOfLeastResistance" */;
@@ -153,6 +308,20 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Ryan Boder";
 				TargetAttributes = {
+					C0347B301CB5DDEE004BC6DF = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C0347B431CB5DDEE004BC6DF = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C0347B301CB5DDEE004BC6DF;
+					};
+					C0347B4E1CB5DDEE004BC6DF = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C0347B301CB5DDEE004BC6DF;
+					};
+					C0347B621CB5DEFC004BC6DF = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					C0A990BC1CACC64200ACE904 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -167,6 +336,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = C0A990B41CACC64200ACE904;
 			productRefGroup = C0A990BE1CACC64200ACE904 /* Products */;
@@ -175,11 +345,46 @@
 			targets = (
 				C0A990BC1CACC64200ACE904 /* PathOfLeastResistance */,
 				C0A990CB1CACC67400ACE904 /* Test */,
+				C0347B301CB5DDEE004BC6DF /* PLRApp */,
+				C0347B431CB5DDEE004BC6DF /* PLRAppTests */,
+				C0347B4E1CB5DDEE004BC6DF /* PLRAppUITests */,
+				C0347B621CB5DEFC004BC6DF /* PLRiOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C0347B2F1CB5DDEE004BC6DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0347B421CB5DDEE004BC6DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0347B4D1CB5DDEE004BC6DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0347B611CB5DEFC004BC6DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0347B701CB5DEFD004BC6DF /* LaunchScreen.storyboard in Resources */,
+				C0347B6D1CB5DEFD004BC6DF /* Assets.xcassets in Resources */,
+				C0347B6B1CB5DEFD004BC6DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0A990CA1CACC67400ACE904 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,11 +395,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C0347B2D1CB5DDEE004BC6DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0347B401CB5DDEE004BC6DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0347B4B1CB5DDEE004BC6DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0347B5F1CB5DEFC004BC6DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0347B681CB5DEFD004BC6DF /* ViewController.swift in Sources */,
+				C0347B661CB5DEFD004BC6DF /* AppDelegate.swift in Sources */,
+				C0347B751CB5EC83004BC6DF /* PathFinder.swift in Sources */,
+				C0347B7C1CB5F2E6004BC6DF /* InputParser.swift in Sources */,
+				C0347B761CB5EC8F004BC6DF /* Grid.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0A990B91CACC64200ACE904 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C0A990D91CACC74D00ACE904 /* PathFinder.swift in Sources */,
+				C0347B781CB5ED44004BC6DF /* InputParser.swift in Sources */,
 				C0A990C11CACC64200ACE904 /* main.swift in Sources */,
 				C082A3521CADE6B7005791E4 /* Grid.swift in Sources */,
 			);
@@ -207,13 +446,25 @@
 				C0A990DA1CACC76200ACE904 /* PathFinder.swift in Sources */,
 				C0A990D71CACC70800ACE904 /* PathFinderTest.swift in Sources */,
 				C082A3531CADE6B7005791E4 /* Grid.swift in Sources */,
+				C0347B7A1CB5F026004BC6DF /* InputParserTest.swift in Sources */,
 				C082A3551CADEA62005791E4 /* GridTest.swift in Sources */,
+				C0347B7B1CB5F165004BC6DF /* InputParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C0347B461CB5DDEE004BC6DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0347B301CB5DDEE004BC6DF /* PLRApp */;
+			targetProxy = C0347B451CB5DDEE004BC6DF /* PBXContainerItemProxy */;
+		};
+		C0347B511CB5DDEE004BC6DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0347B301CB5DDEE004BC6DF /* PLRApp */;
+			targetProxy = C0347B501CB5DDEE004BC6DF /* PBXContainerItemProxy */;
+		};
 		C0A990D51CACC6C200ACE904 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C0A990BC1CACC64200ACE904 /* PathOfLeastResistance */;
@@ -221,7 +472,148 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		C0347B691CB5DEFD004BC6DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0347B6A1CB5DEFD004BC6DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0347B6E1CB5DEFD004BC6DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0347B6F1CB5DEFD004BC6DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		C0347B561CB5DDEE004BC6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PLRApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.boder.PLRApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0347B571CB5DDEE004BC6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PLRApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.boder.PLRApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0347B581CB5DDEE004BC6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PLRAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.boder.PLRAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PLRApp.app/PLRApp";
+			};
+			name = Debug;
+		};
+		C0347B591CB5DDEE004BC6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PLRAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.boder.PLRAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PLRApp.app/PLRApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0347B5A1CB5DDEE004BC6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PLRAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.boder.PLRAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = PLRApp;
+			};
+			name = Debug;
+		};
+		C0347B5B1CB5DDEE004BC6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PLRAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.boder.PLRAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = PLRApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0347B721CB5DEFD004BC6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PLRiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.boder.PLRiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0347B731CB5DEFD004BC6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PLRiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.boder.PLRiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C0A990C21CACC64200ACE904 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -346,6 +738,41 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C0347B5C1CB5DDEE004BC6DF /* Build configuration list for PBXNativeTarget "PLRApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0347B561CB5DDEE004BC6DF /* Debug */,
+				C0347B571CB5DDEE004BC6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0347B5D1CB5DDEE004BC6DF /* Build configuration list for PBXNativeTarget "PLRAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0347B581CB5DDEE004BC6DF /* Debug */,
+				C0347B591CB5DDEE004BC6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0347B5E1CB5DDEE004BC6DF /* Build configuration list for PBXNativeTarget "PLRAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0347B5A1CB5DDEE004BC6DF /* Debug */,
+				C0347B5B1CB5DDEE004BC6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0347B741CB5DEFD004BC6DF /* Build configuration list for PBXNativeTarget "PLRiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0347B721CB5DEFD004BC6DF /* Debug */,
+				C0347B731CB5DEFD004BC6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C0A990B81CACC64200ACE904 /* Build configuration list for PBXProject "PathOfLeastResistance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
