@@ -321,6 +321,7 @@
 					};
 					C0347B621CB5DEFC004BC6DF = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8NY6ATFW4V;
 					};
 					C0A990BC1CACC64200ACE904 = {
 						CreatedOnToolsVersion = 7.3;
@@ -587,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PLRiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -602,6 +604,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PLRiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -772,6 +775,7 @@
 				C0347B731CB5DEFD004BC6DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0A990B81CACC64200ACE904 /* Build configuration list for PBXProject "PathOfLeastResistance" */ = {
 			isa = XCConfigurationList;

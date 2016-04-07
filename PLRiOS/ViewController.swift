@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  PLRiOS
-//
-//  Created by Amanda Boder on 4/6/16.
-//  Copyright © 2016 Ryan Boder. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController, UITextViewDelegate {
@@ -13,14 +5,19 @@ class ViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
+        // Don't enable the button until a valid input grid has been entered
+        enableButton(false)
     }
     
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var button: UIButton!
     
-    // Dismiss the keyboard on invalid input
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         if !["0","1","2","3","4","5","6","7","8","9"," ","\n",""].contains(text) {
+            // Dismiss the keyboard on an invalid key press
             textView.resignFirstResponder()
+            // Only enable the button if the current input is valid
+            enableButton(validate(textView.text))
         }
         return true
     }
@@ -30,7 +27,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         let grid = parser.parse(textView.text)
         let finder = PathFinder()
         let result = finder.find(grid)
-        //show((true, 24, [1,2,3]))
         show(result)
     }
     
@@ -50,5 +46,31 @@ class ViewController: UIViewController, UITextViewDelegate {
         // show the alert
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    
+    // Validates whether the current input is a valid grid
+    private func validate(input: String) -> Bool {
+        var width: Int!
+        let rows = input.componentsSeparatedByString("\n")
+        for row in rows {
+            let items = row.componentsSeparatedByString(" ")
+            if width == nil {
+                width = items.count
+            }
+            if items.count != width {
+                return false
+            }
+            for item in items {
+                if Int(item) == nil {
+                    return false
+                }
+            }
+        }
+        return width != nil
+    }
+    
+    private func enableButton(enabled: Bool) {
+        button.enabled = enabled
+        button.alpha = enabled ? 1 : 0.5
+    }
+    
 }
-
