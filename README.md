@@ -65,8 +65,13 @@ The button to calculate the path of least resistance is disabled when the app fi
 
 Touch the text area and use the keyboard to enter the grid data. Only numeric digits, space, backspace and return will work on the keyboard. Pressing any other character will dismiss the keyboard.
 
-If the grid data you've entered is invalid then the button will remain disabled. Only numbers separated by single spaces and new lines are considered valid. All rows must have the same number items.
+If the grid data you've entered is invalid then the button will remain disabled. Only numbers separated by single spaces and new lines are considered valid. All rows must have the same number of items.
 
 When you have entered valid grid data, press the button to calculate the path of least resistance.
 
-![Start up](documentation/ios/example1/1.png) ![Enter grid](documentation/ios/example1/2.png) ![Dismiss keyboard](documentation/ios/example1/3.png) ![Press button](documentation/ios/example1/4.png)
+![Start up](documentation/ios/example1/1.png)
+![Enter grid](documentation/ios/example1/2.png)
+![Dismiss keyboard](documentation/ios/example1/3.png)
+![Press button](documentation/ios/example1/4.png)
+
+The iOS app has been tested on iOS 9.3.1.
